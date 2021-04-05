@@ -16,7 +16,7 @@ import statsmodels.api as sm
 st.title('Trend Signal Dashboard')
 #st.subheader('Streamlit App designed to illustrate conviction based scaling of filtered trend signal')
 
-#quandl.ApiConfig.api_key = "znv8zQ4xXa_8CS-XhQdB"
+#quandl.ApiConfig.api_key = "XXXXXXXXXXXXXX"
 data = quandl.get("USTREASURY/YIELD").loc[:,'2 YR':'30 YR']
 
 # choose your weapon
