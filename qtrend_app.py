@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Streamlit App designed to show Quantamental Scaling of trend signal
+Streamlit App designed to show forecast scaling of a trend signal
 
 @author: purchaja
 """
