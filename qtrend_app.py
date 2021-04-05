@@ -14,13 +14,11 @@ import statsmodels.api as sm
 
 #title and open quandl API 
 st.title('Trend Signal Dashboard')
-#st.subheader('Streamlit App designed to illustrate conviction based scaling of filtered trend signal')
 
 #quandl.ApiConfig.api_key = "XXXXXXXXXXXXXX"
 data = quandl.get("USTREASURY/YIELD").loc[:,'2 YR':'30 YR']
 
 # choose your weapon
-option = '10 YR'
 option = st.sidebar.selectbox(
     'Select Asset:',
      data.columns)
@@ -101,7 +99,7 @@ st.write(qmhp)
 'Cumulative returns for selected strategy'
 st.line_chart(df['Strat'].cumsum())
 
-# EMA optimisation
+# EWMA optimisation
 run_opt = st.checkbox('Run optimisation?')
 if run_opt:
     with st.spinner('Processing...'):
