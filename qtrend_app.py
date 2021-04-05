@@ -152,8 +152,10 @@ if st.checkbox('Show dataframe'):
     chart_data = df
     chart_data
     
-#notes
-st.sidebar.write('This Streamlit App is designed to showcase a simple '
-                 'conviction-based filtered trend signal. '
-                 'The process is transferable to a broader range of assets'
-                 'E.g. G10 rates, curve and flies.')
+#side notes
+st.sidebar.write('This app showcases an illustrative filtered trend model. '
+                 'A simple trend signal is converted to a smoothed forecast '
+                 'capped at ±20. The app shows some back backtesting and '
+                 'optimisation of risk-adjusted returns. The process is '
+                 'transferable to a broader range of assets (e.g. G10 rates, '
+                 'curve and flies) and other signals.')
