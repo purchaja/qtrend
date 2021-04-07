@@ -15,7 +15,7 @@ import statsmodels.api as sm
 #title and open quandl API 
 st.title('Trend Signal Dashboard')
 
-#quandl.ApiConfig.api_key = "XXXXXXXXXXXXXX"
+#quandl.ApiConfig.api_key = "znv8zQ4xXa_8CS-XhQdB"
 data = quandl.get("USTREASURY/YIELD").loc[:,'2 YR':'30 YR']
 
 # choose your weapon
@@ -153,7 +153,7 @@ if st.checkbox('Show dataframe'):
 #side notes
 st.sidebar.write('This app showcases an illustrative filtered trend model. '
                  'A simple trend signal is converted to a smoothed forecast '
-                 'capped at ±20. The app shows some back backtesting and '
+                 'capped at ±20. The app shows some backtesting and '
                  'optimisation of risk-adjusted returns. The process is '
                  'transferable to a broader range of assets (e.g. G10 rates, '
                  'curve and flies) and other signals.')
