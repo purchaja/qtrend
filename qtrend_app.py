@@ -15,7 +15,7 @@ import statsmodels.api as sm
 #title and open quandl API 
 st.title('Trend Signal Dashboard')
 
-#quandl.ApiConfig.api_key = "znv8zQ4xXa_8CS-XhQdB"
+quandl.ApiConfig.api_key = "znv8zQ4xXa_8CS-XhQdB"
 data = quandl.get("USTREASURY/YIELD").loc[:,'2 YR':'30 YR']
 
 # choose your weapon
