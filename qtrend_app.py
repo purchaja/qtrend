@@ -24,8 +24,8 @@ option = st.sidebar.selectbox(
      data.columns)
 
 # EWMA sliders
-EMA1 = st.sidebar.slider('Choose EMA1', 8, 60, value=56, step= 4) 
-EMA2 = st.sidebar.slider('Choose EMA2', 48, 252, value=78, step=10)
+EMA1 = st.sidebar.slider('Choose EMA1', 8, 60, value=8, step= 4) 
+EMA2 = st.sidebar.slider('Choose EMA2', 48, 252, value=48, step=10)
 
 # Current Signals across available 'assets'
 live = pd.DataFrame()
