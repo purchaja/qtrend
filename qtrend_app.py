@@ -147,7 +147,7 @@ st.line_chart(df.loc[:, 'raw_signal':'capped_smoothed_signal'])
 
 #Option to show dataframe
 if st.checkbox('Show dataframe'):
-    chart_data = df
+    chart_data = df.tail(50)
     chart_data
     
 #side notes
