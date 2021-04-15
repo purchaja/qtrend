@@ -21,7 +21,7 @@ data = quandl.get("USTREASURY/YIELD").loc[:,'2 YR':'30 YR']
 # choose your weapon
 option = st.sidebar.selectbox(
     'Select Asset:',
-     data.columns, index='10 YR')
+     data.columns, index=4)
 
 # EWMA sliders
 EMA1 = st.sidebar.slider('Choose EMA1', 8, 60, value=8, step= 4) 
